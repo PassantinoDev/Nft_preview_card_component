@@ -1,7 +1,6 @@
 # Nft_preview_card_component
-# Qr-Code-card
-A basic qr code card from Frontendmentor.io
-# Frontend Mentor - QR code component solution
+A basic Nft card preview from Frontendmentor.io
+# Frontend Mentor - Nft preview card component solution
 
 This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
