@@ -1,27 +1,30 @@
-<!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+    <link rel="stylesheet" href="nft_preview.css">
     <!-- Fuente Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Qr_Code.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- Fuente Outfit -->
-
-    <!-- Titulo -->
-    <title>Frontend Mentor | QR code component</title>
-    <!--Titulo  -->
+    <link rel="stylesheet" href="nft_preview.css">
 
 
+
+
+
+
+
+    <title>Frontend Mentor | NFT preview card component</title>
+  
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution { font-size: 11px; text-align: center; }
       .attribution a { color: hsl(228, 45%, 44%); }
-      :root{
+        :root{
      --main-BG: hsl(217, 54%, 11%);
      --card-BG: hsl(216, 50%, 16%);
      --line:hsl(215, 32%, 27%);
@@ -158,30 +161,45 @@ body{
 }
 
     </style>
-     
   </head>
   <body>
 
-
-    <div class="container">
-        <div class="container-qr-card">
+    <div class="background-container">
+        <div class="container-nft-card">
             <div class="img-header">
-                <div class="img-container">
-                <img src="Img/image-qr-code.png" alt="qr-code">
-                 </div>
+
+                <div class="img-container" id="img-container">
+                    <img preconnect class="img-nft" src="Img/image-equilibrium.jpg" alt="nft-img">
+                </div id="img-container">
+
             </div>
-            <div class="text-footer">
-                <header>
-                    <h2 class="black-text">Improve your front-end skills by building projects</h2>
-                </header>
-                <footer>
-                    <h4 class="smooth-text">Scan te QR code tu visit FrontEnd Mentor and take your codigns skills to the nex level</h4>
-                </footer>
+
+                <div class="text-footer">
+                <section>
+                    <h2 class="white-text">Equilibrium #3429</h2>
+                    <p class="p-smooth-text">Our Equilibrium collection promotes balanca and calm.</p>
+                    <!-- QUANTITY-->
+                    <div class="quantity-days-inline">
+                    <span class="quantity-eth"><i><svg xmlns="http://www.w3.org/2000/svg" width="11" height="18"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg></i><p class="cyan">0.041 ETH</p></span>
+                    <!-- DAYS LEFT -->
+                    <span class="days-left"><i><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg></i><p class="smooth-text-days">3 days left</p></span>
+                    </div>
+                    <div class="middle-line">
+                    </div>
+                    <article class="author-father-div">
+                        <span class="author-inline">
+                        <img class="author-img" src="Img/image-avatar.png" alt="author-img">
+                        <div class="text-author"><span class="smooth-text-author">Creation of</span><p class="name">Jules Wyvern</p>
+                        </span>
+                    </article>
+                </section>
+                </div>
             </div>
         </div>
     </div>
+<br>
     <div class="attribution">
-        <span>Challenge by </span><a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        <span>Challenge by </span><a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
         <span>Coded by </span> <a  target="_blank" href="https://github.com/PassantinoDev">Daniel Passantino</a>.
       </div>
   </body>
